@@ -6,7 +6,7 @@ def vote_class_captain():
     """voting program"""
     candidates = list()
 
-    print("please enter candidate names. Enter Return to finish.")
+    print("please enter candidate names. Press Return to finish.")
 
     while len(candidates) <= 4:
         name = input("Please enter candidate name:")
@@ -23,9 +23,8 @@ def vote_class_captain():
     for index in range(0, len(candidates)):
         print(candidates[index][0], "[" + str(index + 1) + "]")
 
-    print("Please enter Return to exit. ")
     for index in range(0, 4):
-        vote = input("please enter the candidate number to vote: ")
+        vote = input("Enter the candidate number to vote and press enter Return to exit: ")
         if vote == "":
             break
         try:

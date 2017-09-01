@@ -50,3 +50,7 @@ working_hours = False
 working = weekday and working_hours 
 
 print(working)
+
+score = 78
+grade_b = score >= 70 and score <= 79
+print(grade_b)

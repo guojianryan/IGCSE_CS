@@ -34,3 +34,11 @@ for i in range(1, 100):
     if i % 2 != 0:
         print(i)
 
+num = 1
+total = total + num
+
+num = num + 1
+total = total + num
+
+num = num + 1
+total = total + num

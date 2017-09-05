@@ -43,6 +43,7 @@ for char in "Ryan Guo":
 index = 0
 name = "Ryan Guo"
 while index < len(name):
+    char = name[index]
     index = index + 1
     if char == " ":
         break

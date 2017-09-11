@@ -5,5 +5,5 @@ will start counting at p, count up to q, in steps of r."""
 
 number = int(input("Enter a number:"))
 
-for x in range(number, 101, number):
+for x in range(0, 101, number):
     print(x)

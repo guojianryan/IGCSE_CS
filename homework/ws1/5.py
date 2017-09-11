@@ -11,7 +11,6 @@ witdh_or_height = float(input("Enter the second number:"))
 
 shape = input("T or R?")
 
-
 if shape == "T":
     print(len_or_base * witdh_or_height /2)
 elif shape == "R":

@@ -2,8 +2,8 @@
 smaller number is a factor of the larger number. Your program should take the numbers in any
 order, largest first or smallest first, and still give the correct answer."""
 
-num1 = float(input("Enter the first number:"))
-num2 = float(input("Enter the second number:"))
+num1 = int(input("Enter the first number:"))
+num2 = int(input("Enter the second number:"))
 
 if num2 > num1:
     num2, num1 = num1, num2

@@ -18,6 +18,8 @@ for count in range(numbers):
         total_odd = total_odd + num
         count_odd = count_odd + 1
 
- 
-print("avg of even numbers:", total_even/count_even)
-print("avg of odd numbers:", total_odd/count_odd)
+if count_even != 0:
+    print("avg of even numbers:", total_even/count_even)
+
+if count_odd != 0:
+    print("avg of odd numbers:", total_odd/count_odd)

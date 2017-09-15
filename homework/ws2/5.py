@@ -22,3 +22,5 @@ if number >= MIN and number <= MAX:
     for i in range(1, number + 1):
         product = product * i
     print(product)
+else: 
+    print("Invaid input. Must be from 1 to 10000. ")

@@ -15,16 +15,18 @@ telling winners that they have also lost, why?
 
 number = int(input("Play 1: enter a number:"))
 
-print("\n" * 10)
-
-for i in range(7):
-    guess = int(input("Play 2: enter a number:"))
-    if number > guess:
-        print("too low")
-    elif number < guess:
-        print("too high")
+if number >= 0 and number <= 100:
+    print("\n" * 50)
+    for i in range(7):
+        guess = int(input("Play 2: enter a number:"))
+        if number > guess:
+            print("too low")
+        elif number < guess:
+            print("too high")
+        else:
+            print("Congrats!")
+            break
     else:
-        print("Congrats!")
-        break
+        print("you lost!")
 else:
-    print("you lost!")
+    print("Please enter a number between 0 and 100. ")

@@ -1,3 +1,5 @@
+#https://www.codewars.com/kata/5263c6999e0f40dee200059d
+
 def get_pins(observed):
 	meta = {"0":"08","1":"124",
 	"2":"2135","3":"326","4":"4157",

@@ -45,7 +45,7 @@ def dec2hex(dec):
 def hex2bin(hex):
 	return (hex2dec(hex))
 
-def bin2hex(bindec2bin):
+def bin2hex(bin):
 	return dec2hex(bin2dec(bin))
 
 

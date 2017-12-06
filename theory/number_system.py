@@ -4,7 +4,7 @@ def dec2bin(dec):
 
 	while dec != 0:
 		result = result + str(dec % 2)
-		dec = dec / 2
+		dec = int(dec / 2)
 
 	return result[::-1]
 
@@ -38,7 +38,7 @@ def dec2hex(dec):
 		if remainder >= 10:
 			char = chr(remainder + 55) 
 		result = result + char
-		dec = dec / 16
+		dec = int(dec / 16)
 
 	return result[::-1]	
 

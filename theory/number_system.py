@@ -43,7 +43,10 @@ def dec2hex(dec):
 	return result[::-1]	
 
 def hex2bin(hex):
-	return dec2bin(hex2dec(hex))
+	return (hex2dec(hex))
 
 def bin2hex(bin):
 	return dec2hex(bin2dec(bin))
+
+
+print(hex2bin("FF"))

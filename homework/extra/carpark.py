@@ -1,5 +1,5 @@
-car_spots = [""] * 2
-larger_spots = [""] *2
+car_spots = [""] * 10
+larger_spots = [""] *5
 
 while True:
     type_of_op = -1

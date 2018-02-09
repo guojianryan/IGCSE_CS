@@ -1,27 +1,26 @@
-def palindrome(str):
-    length = len(str)
-    for index in range(0, length // 2):
-        if str[index] != str[length-index-1]:
-            return False
-    return True
+import os
+import glob
 
-def reverse(array):
-    size = len(array)
-    for index in range(0, int(size / 2)):
-        temp = array[index]
-        array[index] = array[size - index - 1]
-        array[size - index - 1] = temp
-    return array
+def quadrant_selection(x, y):
+    if x > 0:
+        return 1 if y > 0 else 4
+    else:
+        return 2 if y > 0 else 3
 
-def is_prime(n):
-    for num in range(2, int(n/2)):
-        if n % num == 0:
-            return False
-    return True
+def test_cases():
+    path = os.getcwd() + "/CCC/junior_data/j1/"
+    for input_file_name in glob.glob(os.path.join(path, '*.in')):
+        with open(input_file_name) as input_file_handle:
+            lines = [line.strip() for line in input_file_handle]
+            
+            #invoke the function
+            output = quadrant_selection(int(lines[0]),int(lines[1]))
+            
+            #test the function
+            output_file_name = input_file_name[0:-2] + "out"
+            with open(output_file_name) as output_file_handle:
+                expected = int(output_file_handle.readline())
+                print("passed" if output == expected else "expected: {0}, output: {1}".format(expected, output))
 
-def gcd(x, y):
-    while y != 0:
-        temp = x
-        x = y
-        y = temp % y
-    return x
+if __name__ == "__main__":
+    test_cases()

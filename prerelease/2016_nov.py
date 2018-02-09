@@ -37,7 +37,7 @@ def vote_class_captain():
             print("Invalid vote: not an integer.")
 
     #use the votes to sort the array.
-    sorted_candidates = sorted(candidates, reverse=True, key=itemgetter(1))
+    sorted_candidates = sorted(candidates, reverse = True, key = itemgetter(1))
 
     if sorted_candidates[0][1] == sorted_candidates[1][1]:
         print("No overall winner")
